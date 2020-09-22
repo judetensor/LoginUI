@@ -19,7 +19,7 @@ section {
 
 div {
   padding: 12px;
-  box-shadow: 1px 1px 7px gray;
+  box-shadow: 3px 3px 7px gray;
   border-radius: var(--cont-radius, 3%);
   margin-top: 50px;
   border: 2px solid white;
@@ -34,8 +34,8 @@ form {
 }
 
 h4 {
-  font-family: 'Courier New', Courier, monospace, Times, serif;
-  font-size: 28px;
+  font-family: Kurale, 'Courier New', serif;
+  font-size: 34px;
   margin: 30px;
   color: indigo;
 }
@@ -69,14 +69,18 @@ button {
   background-color: var(--background-color, white);
   color: indigo;
   margin-bottom: 25px;
+  outline: none;
+  
 }
 
 button:hover {
   background-color: indigo;
   color: var(--background-color, white);
+  
 }
 
 a {
+  outline: none;
   font-size: 13px;
   text-decoration: none;
   color: lightcoral;
@@ -89,4 +93,5 @@ a:hover {
   border: 2px solid lightcoral;
   background-color: lightcoral;
   color: white;
+  
 }

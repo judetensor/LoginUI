@@ -2,13 +2,50 @@
 <html>
 
 <head>
+  <!-- Import Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kufam" type="text/css" />
+  
+  <!--meta tags -->
+    <link rel="stylesheet" href="page1.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <meta name="description" content="Handle User Choice of Activities" />
+    <title>Preference</title>
 </head>
 
 <body>
-
+  <section>
+    <div>
+      <form action="page2" method="post" accept-charset="utf-8">
+        <p class="caption">What do you <br /> like doing?</p><br />
+        
+        <label class="container" for="hobby1">
+          <input type="checkbox" name="hobby" id="hobby1" value="cooking" />
+          <span class="checkbox-custom"></span>
+          <span class="abc">Cooking</span>
+        </label><br />
+        
+        <label class="container" for="hobby2">
+          <input type="checkbox" name="hobby" id="hobby2" value="reading" />
+          <span class="checkbox-custom"></span>
+          <span class="abc">Travelling</span>
+          </label><br />
+          
+          <label class="container" for="hobby3">
+            <input type="checkbox" name="hobby" id="hobby3" value="travelling" />
+            <span class="checkbox-custom"></span>
+            <span class="abc">Reading</span>
+          </label><br />
+          
+          <label class="container" for="hobby4">
+            <input type="checkbox" name="hobby" id="hobby4" value="hiking" />
+            <span class="checkbox-custom"></span>
+            <span class="abc">Hiking</span>
+          </label><br />
+        </form>
+      </div>
+    </section>
 </body>
 
 </html>

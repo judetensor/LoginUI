@@ -1,0 +1,102 @@
+.root {
+  --indigo: #111FB6;
+}
+
+section {
+  width: 100%;
+}
+
+div {
+  margin: auto;
+  box-shadow: 3px 3px 7px gray;
+  padding: 7px;
+  border: 5px solid white;
+  border-radius: 4%;
+}
+
+.caption {
+  margin: 20px 5px -2px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 38px;
+  font-family: Kufam, Lobster, Arial;
+  color: var(--indigo, #111FB6);
+}
+
+/*Hidden Input checkbox*/
+input {
+  opacity: 0;
+}
+
+.container .checkbox-custom {
+  /*position: absolute;
+  top: 0px;
+  left: 0px;*/
+  position: absolute;
+  left: 40px;
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--indigo, #111FB6);
+  
+  /* Transition Effect*/
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.container .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 8px;
+  width: 0px;
+  height: 0px;
+  border-radius: 5px;
+  border: solid var(--indigo, #111FB6);
+  border-top-width: 0px 3px 3px 0px;
+  -webkit-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  
+  /*Transition Effect*/
+   -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.container input:checked ~ .checkbox-custom {
+  background-color: var(--indigo, #111FB6);
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid var(--indigo, #111FB6);
+}
+
+.container input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  border-color: var(--indigo, #111FB6) white white var(--indigo, #111FB6);
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.abc {
+  margin-left: 19px;
+  font-family: Kufam, Arial;
+}
+
+.container {
+  display: block;
+}
