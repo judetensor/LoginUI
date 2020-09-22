@@ -23,11 +23,15 @@ div {
   color: var(--indigo, #111FB6);
 }
 
-/*Hidden Input checkbox*/
+/*Implementing a Custom checkbox*/
+/*Step 1*/
+/*Hide Input checkbox*/
 input {
   opacity: 0;
 }
 
+/*Step 2*/
+/*Style custom checkhbox for checked-state*/
 .container .checkbox-custom {
   /*position: absolute;
   top: 0px;
@@ -67,7 +71,10 @@ input {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+/*finished styling for unchecked-state*/
 
+/*Step 3*/
+/*Style custom checkbox for checked state*/
 .container input:checked ~ .checkbox-custom {
   background-color: var(--indigo, #111FB6);
   border-radius: 5px;
@@ -91,6 +98,7 @@ input {
   background-color: transparent;
   border-radius: 0px;
 }
+/*Done with the custom checkbox styling*/
 
 .abc {
   margin-left: 19px;
