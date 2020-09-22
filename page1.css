@@ -8,7 +8,7 @@ section {
 
 div {
   margin: auto;
-  box-shadow: 3px 3px 7px gray;
+  box-shadow: 2px 2px 7px gray;
   padding: 7px;
   border: 5px solid white;
   border-radius: 4%;
@@ -82,7 +82,7 @@ input {
   transform: rotate(45deg) scale(1);
   opacity: 1;
   left: 5px;
-  top: 2px;
+  top: 1.7px;
   width: 4px;
   height: 8px;
   border: solid white;
@@ -95,6 +95,7 @@ input {
 .abc {
   margin-left: 19px;
   font-family: Kufam, Arial;
+  color: var(--indigo, #111FB6);
 }
 
 .container {
