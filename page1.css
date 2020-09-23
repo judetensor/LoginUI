@@ -20,7 +20,6 @@ div {
   font-weight: bold;
   font-size: 38px;
   font-family: Kufam, Lobster, Arial;
-  color: var(--indigo, #111FB6);
 }
 
 /*Implementing a Custom checkbox*/
@@ -31,20 +30,20 @@ input {
 }
 
 /*Step 2*/
-/*Style custom checkhbox for checked-state*/
+/*Style custom checkhbox for unchecked-state*/
 .container .checkbox-custom {
   /*position: absolute;
   top: 0px;
   left: 0px;*/
   position: absolute;
   left: 40px;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   margin-top: 5px;
   
   background-color: transparent;
   border-radius: 5px;
-  border: 2px solid var(--indigo, #111FB6);
+  border: 1.5px solid #494A50;
   
   /* Transition Effect*/
   -webkit-transition: all 0.5s ease-out;
@@ -57,6 +56,7 @@ input {
   position: absolute;
   content: "";
   left: 8px;
+  top: 2px;
   width: 0px;
   height: 0px;
   border-radius: 5px;
@@ -66,7 +66,7 @@ input {
   transform: rotate(0deg) scale(0);
   
   /*Transition Effect*/
-   -webkit-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -81,7 +81,7 @@ input {
   -webkit-transform: rotate(0deg) scale(1);
   transform: rotate(0deg) scale(1);
   opacity: 1;
-  border: 2px solid var(--indigo, #111FB6);
+  border: 0px solid var(--indigo, #111FB6);
 }
 
 .container input:checked ~ .checkbox-custom::after {
@@ -89,11 +89,11 @@ input {
   transform: rotate(45deg) scale(1);
   opacity: 1;
   left: 5px;
-  top: 1.7px;
+  top: 1.px;
   width: 4px;
   height: 8px;
   border: solid white;
-  border-width: 0 2px 2px 0;
+  border-width: 0 1.5px 1.5px 0;
   border-color: var(--indigo, #111FB6) white white var(--indigo, #111FB6);
   background-color: transparent;
   border-radius: 0px;
@@ -102,8 +102,8 @@ input {
 
 .abc {
   margin-left: 19px;
+  margin-bottom: 5px;
   font-family: Kufam, Arial;
-  color: var(--indigo, #111FB6);
 }
 
 .container {
